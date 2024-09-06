@@ -1,0 +1,236 @@
+
+body {
+  margin: 0;
+  padding-top: 48px;
+}
+
+* {
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+  /* position: absolute;
+  width:100%;
+  z-index:10;
+  max-width:100%; */
+  /* background-color: #AA0202; */
+  /* background-color: #A60202; */
+  /* background-color: #610000; */
+  /* background-color: #550000; */
+  /* background-color: #770202; */
+  background-color: #610101;
+}
+
+.ribbon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-logo {
+  width: 80px;
+  height: auto;
+}
+
+.ribbon-1 {
+  width: 100px;
+  height: 90px;
+  /* background: #610101; */
+  background: #770202;
+  top: 0px;
+  left: 30px;
+}
+
+.ribbon-1:after {
+  display: inline-block;
+  height: 50;
+  width: 50;
+  content: "";
+  position: absolute;
+  top: 90px;
+  bottom: 0px;
+  left: 0px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 20px solid #770202;
+  /* border-top: 20px solid #610101; */
+  border-bottom: 50px solid transparent;
+}
+
+.navbar-brand h4 {
+  font-family: 'Cormorant SC', serif;
+  font-size: 1rem;
+  margin-top: 0px;
+  color: white;
+  padding-left: 135px;
+}
+
+.navbar-brand p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.66rem;
+  color: white;
+  margin: 0px;
+  padding-left: 3.5px;
+}
+
+.navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-nav>li:hover a {
+  color: rgb(223, 223, 223);
+}
+
+.navbar-nav>li>a:target, .navbar-nav>li>a:focus, .navbar-nav>li>a:active {
+  color: rgb(194, 194, 194);
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url("./assets/menu_white.png");
+  background-color: transparent;
+  width: 20px;
+  height: 25px;
+}
+
+
+.navbar-toggler:hover, .navbar-toggler:focus {
+  border-color: #D3D3D3;
+  outline: none;
+  box-shadow: none;
+  padding: 0px 4px 0px 4px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  opacity: 0;
+  filter:alpha(opacity=0); /* IE support */
+}
+
+.carousel-item {
+ height:32rem;
+ position: relative;
+ background-position: center;
+ background-size:cover;
+ color: white !important;
+}
+
+#carouselcontainer1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom:50px;
+}
+
+#main-content h2  {
+  color: #00791B !important;
+}
+
+  /* Content Divider */
+ hr {
+  height: 0px;
+  border: none;
+  border-top: 1px solid green;
+ }
+
+ #btn-back-to-top {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   display: none;
+   padding: 0px 4px 2px 4px;
+ }
+
+ .bd-placeholder-img {
+  height:100px; 
+  width: auto;
+ }
+
+ .col-md-auto {
+   width: 50%;
+ }
+
+ a.IconAnchor {
+   text-decoration: none !important;
+   color: #000000 !important;
+ }
+
+ a.IconAnchor:Hover, a.IconAnchor:focus {
+   text-decoration: none !important;
+   color: #494949 !important;
+ }
+
+ /* Desktops @1440p */
+ @media only screen and (min-width: 1921px){
+   #slide2 {
+     background-image: url(./assets/Volleyball\ Maroons\ 3.jpg);
+   }
+   .carousel-item {
+     height: 50rem;
+     background-position: top;
+   }
+   .col-md-auto {
+     width: auto;
+     padding: 0px 36px 10px 36px;
+   }
+ }
+
+ /* Tablets and Desktops @1080p */
+ @media only screen and (min-width: 768px) and (max-width: 1920px){
+   #slide2 {
+     background-image: url(./assets/Volleyball\ Maroons\ 3.jpg);
+   }
+   .navbar-brand h4 {
+    font-size: 1.3rem;
+   }
+   .navbar-brand p {
+    font-size: 0.70rem;
+   }
+   .col-md-auto {
+     width: auto;
+     padding: 0px 36px 10px 36px;
+   }
+ }
+
+ /* Mobile, Tablets and smaller devices*/
+ @media only screen and (max-width: 768px){
+   #slide2 {
+     background-image: url(./assets/Volleyball\ Maroons\ 3.jpg);
+   }
+   .navbar-logo {
+     width: 42px;
+     height: auto;
+   }
+   .ribbon-1 {
+     width: 40px;
+     height: 45px;
+     /* background: #770202; */
+     background: transparent;
+     top: 0px;
+     left: 15px;
+   }
+   .ribbon-1:after {
+     display: inline-block;
+     content: "";
+     position: absolute;
+     top: 60px;
+     bottom: 0px;
+     left: 0px;
+     border-left: 35px solid transparent;
+     border-right: 35px solid transparent;
+     border-top: 20px solid transparent;
+     border-bottom: 35px solid transparent;
+   }
+   .navbar-brand h4 {
+     padding-left: 50px;
+   }
+   .navbar-brand p {
+     padding-left: 1px;
+     font-size: 0.57rem;
+   }
+   .carousel-item {
+       height: 22rem;
+   }
+ }
